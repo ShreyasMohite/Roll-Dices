@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+#body {
+    background-color: #201c19;
+}
+
+.content-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    h2 {
+        text-align: center;
+        margin: 1rem 0rem;
+        color: white;
+    }
+    .dies {
+        text-align: center;
+        img {
+            margin: 5rem 0rem;
+        }
+    }
+    .button {
+        text-align: center;
+        display: flex;
+        button {
+            width: 8rem;
+            padding: 1rem;
+            font-size: 1rem;
+            cursor: pointer;
+            margin: 1rem 0.3rem;
+            border: none;
+            border-radius: 12px;
+            background-color: orange;
+            transition: 1s;
+            &:hover {
+                box-shadow: 0px 0px 12px white;
+            }
+        }
+    }
+}
+
+@media(max-width:800px) {
+    .button {
+        flex-direction: column;
+    }
+}
